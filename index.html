@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>DIGITAL ELECTRONICS</h1>
+<h2> LOGIC SIMULATOR </h2>
+<h3>PHASE 1(Basic gates-AND,OR,NOT)</h3>
+<div class="logicgate">
+<h4>1.AND gate</h4>
+ <div class="left">
+<p>An AND gate checks whether all its inputs are 1.<br>
+<p>For a simple 2-input AND gate:</p><br>
+<p>Input A = 0, Input B = 0 → Output = 0</p><br>
+<p>Input A = 0, Input B = 1 → Output = 0</p><br>
+<p>Input A = 1, Input B = 0 → Output = 0</p><br>
+<p>Input A = 1, Input B = 1 → Output = 1</p><br>
+<div>
+<div class="right">
+<img src="https://cdn.shopify.com/s/files/1/0611/1644/9018/files/two_input_AND_Gate_with_truth_table_480x480.jpg?v=1681414181">
+</div>
+<button id="A" onclick="this.innerText = this.innerText == '0' ? '1' : '0'; calculateOutput();" style="font-size: 20px; padding: 10px 20px;">0</button>
+  <span style="font-size: 24px; margin: 0 10px;">+</span>
+  <button id="B" onclick="this.innerText = this.innerText == '0' ? '1' : '0'; calculateOutput();" style="font-size: 20px; padding: 10px 20px;">0</button>
+<br>
+    AND Gate Output = <span id="result" style="color: brown;">0</span>
+    </div>
+    </div>
+<script>
+
+  function calculateOutput() {
+    let valA = parseInt(document.getElementById('A').innerText);
+    let valB = parseInt(document.getElementById('B').innerText);
+    let output = valA && valB; 
+    document.getElementById('result').innerText = output ? 1 : 0;
+  }
+</script>
+</div>
+</div>
+</p>
+</div>
+</body>
+</html>

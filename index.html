@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>DIGITAL ELECTRONICS</h1>
+<h2> LOGIC SIMULATOR </h2>
+<h3>PHASE 1(Basic gates-AND,OR,NOT)</h3>
+<div class="logicgate">
+<h4>1.AND gate</h4>
+ <div class="left">
+<p>An AND gate checks whether all its inputs are 1.<br>
+<p>For a simple 2-input AND gate:</p><br>
+<p>Input A = 0, Input B = 0 → Output = 0</p><br>
+<p>Input A = 0, Input B = 1 → Output = 0</p><br>
+<p>Input A = 1, Input B = 0 → Output = 0</p><br>
+<p>Input A = 1, Input B = 1 → Output = 1</p><br>
+<div>
+<div class="right">
+<img src="https://cdn.shopify.com/s/files/1/0611/1644/9018/files/two_input_AND_Gate_with_truth_table_480x480.jpg?v=1681414181">
+</div>
+<button id="andA" onclick="this.innerText = this.innerText == '0' ? '1' : '0'; calculateandOutput();" style="font-size: 20px; padding: 10px 20px;">0</button>
+  <span style="font-size: 24px; margin: 0 10px;">+</span>
+  <button id="andB" onclick="this.innerText = this.innerText == '0' ? '1' : '0'; calculateandOutput();" style="font-size: 20px; padding: 10px 20px;">0</button>
+<br>
+    AND Gate Output = <span id="andresult" style="color: brown;">0</span>
+    </div>
+    </div>
+<script>
+
+  function calculateandOutput() {
+    let valA = parseInt(document.getElementById('andA').innerText);
+    let valB = parseInt(document.getElementById('andB').innerText);
+    let output = valA && valB; 
+    document.getElementById('andresult').innerText = output ? 1 : 0;
+  }
+</script>
+<div class="logicgate">
+<h4>2.OR gate</h4>
+ <div class="left">
+<p>An OR gate checks whether any of its inputs are 1.<br>
+<p>For a simple 2-input OR gate:</p><br>
+<p>Input A = 0, Input B = 0 → Output = 0</p><br>
+<p>Input A = 0, Input B = 1 → Output = 1</p><br>
+<p>Input A = 1, Input B = 0 → Output = 1</p><br>
+<p>Input A = 1, Input B = 1 → Output = 1</p><br>
+<div>
+<div class="right">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo-z-TELV-MrblIyWD2vFsHmVGtXSTuhJg6A&s">
+</div>
+<button id="orA" onclick="this.innerText = this.innerText == '0' ? '1' : '0'; calculateorOutput();" style="font-size: 20px; padding: 10px 20px;">0</button>
+  <span style="font-size: 24px; margin: 0 10px;">+</span>
+  <button id="orB" onclick="this.innerText = this.innerText == '0' ? '1' : '0'; calculateorOutput();" style="font-size: 20px; padding: 10px 20px;">0</button>
+<br>
+    OR Gate Output = <span id="orresult" style="color: brown;">0</span>
+    </div>
+    </div>
+<script>
+  function calculateorOutput() {
+  let valA = !!parseInt(document.getElementById('orA').innerText);
+  let valB = !!parseInt(document.getElementById('orB').innerText);
+  let output = valA || valB; 
+  document.getElementById('orresult').innerText = output ? 1 : 0;
+}
+</script>
+</div>
+</div>
+</div>
+</p>
+</div>
+</body>
+</html>

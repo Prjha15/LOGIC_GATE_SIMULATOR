@@ -9,8 +9,6 @@ This project is focused on simulating basic digital logic gates visually and int
 - AND Gate simulation
 - OR Gate simulation
 - Interactive input buttons
-- Real-time output calculation
-- Beginner-level frontend implementation
 
 ## Project Status
 

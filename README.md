@@ -18,11 +18,8 @@ This project is focused on simulating basic digital logic gates visually and int
 
 More features and improvements are being added gradually, including:
 
-- NOT Gate,OR Gate
+- NOT Gate
 - NAND, NOR, XOR, XNOR gates
-- Better UI design
-- LED-style output indicators
-- Wire connections and animations
 - Truth table generation
 - Circuit combination support
 

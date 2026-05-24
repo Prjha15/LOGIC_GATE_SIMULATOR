@@ -4,9 +4,11 @@ h1,h2{
      text-decoration:underline;
      font-weight:bold;
      background-color:rgba(17, 17, 134, 0.644);
+     padding: 8px;
+     border-radius: 6px;
 }
 h3{
-    color:rgb(233, 24, 59);
+    color:black;
     margin:40px;
     text-decoration:underline;
 }
@@ -49,6 +51,6 @@ p{
 
 }
 body{
-    background-color:rgba(221, 221, 44, 0.466)
+    background-color:#D3D3D3;
 }
 
